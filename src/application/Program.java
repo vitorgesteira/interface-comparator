@@ -16,7 +16,7 @@ public class Program {
 		list.add(new Product("Notebook", 1200.00));
 		list.add(new Product("Tablet", 450.00));
 		
-		Collections.sort(list);//organiza a lista em ordem alfabetica
+		list.sort(new MyComparator());//organiza em ordem alfabetica comparando usando o MyComparator
 		
 		for(Product p : list) {
 			System.out.println(p);
